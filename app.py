@@ -1,25 +1,25 @@
 from flask import Flask,g,render_template,send_file,request, redirect, url_for
-import base64,os
-from io import BytesIO
-from datetime import datetime, timedelta
+# import base64,os
+# from io import BytesIO
+# from datetime import datetime, timedelta
 
-import sqlite3
-from db import *
+# import sqlite3
+# from db import *
 app = Flask(__name__)
 
-DATABASE = 'StudySync.db'  
-def get_db():
-    db = getattr(g, '_database', None)
-    if db is None:
-        db = g._database = sqlite3.connect(DATABASE)
-    return db
+# DATABASE = 'StudySync.db'  
+# def get_db():
+#     db = getattr(g, '_database', None)
+#     if db is None:
+#         db = g._database = sqlite3.connect(DATABASE)
+#     return db
 
 
-@app.teardown_appcontext
-def close_connection(exception):
-    db = getattr(g, '_database', None)
-    if db is not None:
-        db.close()
+# @app.teardown_appcontext
+# def close_connection(exception):
+#     db = getattr(g, '_database', None)
+#     if db is not None:
+#         db.close()
 
 # def getlog(l_id):
 #     db= get_db()
@@ -55,8 +55,8 @@ def close_connection(exception):
   
 @app.route('/')
 def home():
-    create_table()
-    add_module_count_trigger()
+    # create_table()
+    # add_module_count_trigger()
     return render_template('home.html')
 
 if __name__ == "__main__":
