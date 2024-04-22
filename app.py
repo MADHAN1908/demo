@@ -1454,5 +1454,5 @@ def  course_completed():
     courses=cur.fetchall()
     # cur.close()
     return render_template('ad_score_details.html',scores=scores,courses=courses,c_id=course_id,l_id=l_id)
-if _name=="main_":
+if __name__=="main_":
     app.run (debug=True)
