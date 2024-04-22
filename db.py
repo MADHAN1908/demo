@@ -1,4 +1,4 @@
-from flask import Flask ,g
+from flask import  g
 import sqlite3
 DATABASE = 'StudySync.db'  
 def get_db():

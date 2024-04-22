@@ -20,7 +20,7 @@
         <div class="dropdown">
         <button  class="login">Login</button>
         <div class="dropdown-content">
-            <li><a href="/studentlogin">User</a></li>
+            <li><a href="#">User</a></li>
             <li><a href="#">Admin</a></li>
           </div>
         </div>
@@ -31,7 +31,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#about">Services</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="/student">User Login</a></li>
+            <li><a href="#">User Login</a></li>
             <li><a href="#">Admin Login</a></li>
         </div>
     
@@ -63,7 +63,7 @@
             <div class="contact-container">
               <div class="contact-form">
                   <h3>Send us a message</h3>
-                  <form action="user_message" method="post">
+                  <form >
                       <div class="form-group">
                        <input type="text" name="name" placeholder="Registed Name" required>
                       </div>
@@ -73,7 +73,7 @@
                          <div class="form-group">
                          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
                          </div>
-                         <div class="form-group" style="color:white;" >{% if confirm %}{{confirm}}{% endif %}</div>
+                         <div class="form-group" style="color:white;" ></div>
                          <button type="submit"><b>Send Message</b></button>
                   </form>
               </div>
