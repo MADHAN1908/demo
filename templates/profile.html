@@ -38,7 +38,7 @@
             <div class="progress-bar">
                 {% if completed_courses %}
                 {% for course in completed_courses %}
-                    <li><a href="{{url_for('capture_image',ass_id=course[3],c_name=course[5],s_name=course[4],dt=course[6])}}">
+                    <li><a href="#">
                         <img src="data:image/jpeg;base64,{{ course[2] }}">
                         <div class="hl"></div>
                         <h4>{{ course[1] }}</h4>
