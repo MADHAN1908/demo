@@ -1,7 +1,7 @@
 from flask import Flask,g,render_template,send_file,request, redirect, url_for,session
 
 from db import *
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
     
 @app.route('/')
 def home():
